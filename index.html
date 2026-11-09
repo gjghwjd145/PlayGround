@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#101a2d" />
-  <meta name="description" content="Raise, craft, and adventure with your own little slimes." />
-  <title>Slimebound — A tiny slime RPG</title>
+  <meta name="description" content="푸딩처럼 말랑한 슬라임과 함께하는 포근한 모험." />
+  <title>슬라임 정원 — 말랑말랑 슬라임 어드벤처</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,32 +18,32 @@
 <body>
   <div class="app-shell">
     <header class="topbar">
-      <a class="brand" href="#" aria-label="Slimebound home"><span class="brand-mark">✦</span><span>slime<span class="brand-light">bound</span></span></a>
-      <div class="season-pill"><span class="season-dot"></span> VERDANT SEASON <span class="season-divider">·</span> DAY <b id="day-count">01</b></div>
+      <a class="brand" href="#" aria-label="슬라임 정원 홈"><span class="brand-mark">✦</span><span>슬라임<span class="brand-light">정원</span></span></a>
+      <div class="season-pill"><span class="season-dot"></span> 초록빛 계절 <span class="season-divider">·</span> 모험 <b id="day-count">01</b>일째</div>
       <div class="resources">
-        <div class="resource"><span class="resource-icon coin-icon">✦</span><b id="coin-count">120</b><span class="resource-name">GLOW</span></div>
-        <div class="resource"><span class="resource-icon dew-icon">◈</span><b id="dew-count">8</b><span class="resource-name">DEW</span></div>
-        <button class="avatar-button" id="profile-button" aria-label="Player profile">A</button>
+        <div class="resource"><span class="resource-icon coin-icon">✦</span><b id="coin-count">120</b><span class="resource-name">빛</span></div>
+        <div class="resource"><span class="resource-icon dew-icon">◈</span><b id="dew-count">8</b><span class="resource-name">이슬</span></div>
+        <button class="avatar-button" id="profile-button" aria-label="플레이어 정보">A</button>
       </div>
     </header>
     <div class="layout">
-      <aside class="sidebar" aria-label="Main navigation">
-        <div class="side-label">YOUR WORLD</div>
-        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span><span>HABITAT</span><i></i></button>
-        <button class="nav-item" data-view="lab"><span class="nav-icon">✧</span><span>SLIME LAB</span><i></i></button>
-        <button class="nav-item" data-view="explore"><span class="nav-icon">⚔</span><span>EXPLORE</span><i></i></button>
-        <button class="nav-item" data-view="collection"><span class="nav-icon">▦</span><span>COLLECTION</span><i></i></button>
+      <aside class="sidebar" aria-label="주요 메뉴">
+        <div class="side-label">나의 세계</div>
+        <button class="nav-item active" data-view="home"><span class="nav-icon">⌂</span><span>슬라임 정원</span><i></i></button>
+        <button class="nav-item" data-view="lab"><span class="nav-icon">✧</span><span>슬라임 연구소</span><i></i></button>
+        <button class="nav-item" data-view="explore"><span class="nav-icon">⚔</span><span>모험 떠나기</span><i></i></button>
+        <button class="nav-item" data-view="collection"><span class="nav-icon">▦</span><span>도감</span><i></i></button>
         <div class="side-spacer"></div>
-        <div class="side-quest"><div class="quest-spark">✦</div><div class="quest-caption">TODAY'S TASK</div><b id="quest-title">Give your slime a treat</b><div class="quest-progress"><span id="quest-progress"></span></div><div class="quest-foot"><span id="quest-progress-label">0 / 1</span><span>+15 ✦</span></div></div>
-        <div class="sidebar-foot"><span class="online-dot"></span> YOUR LITTLE WORLD IS SAFE</div>
+        <div class="side-quest"><div class="quest-spark">✦</div><div class="quest-caption">오늘의 작은 임무</div><b id="quest-title">슬라임에게 간식 주기</b><div class="quest-progress"><span id="quest-progress"></span></div><div class="quest-foot"><span id="quest-progress-label">0 / 1</span><span>+15 ✦</span></div></div>
+        <div class="sidebar-foot"><span class="online-dot"></span> 정원은 언제나 안전해요</div>
       </aside>
       <main id="main-content" class="main-content" aria-live="polite"></main>
     </div>
-    <nav class="mobile-nav" aria-label="Mobile navigation">
-      <button class="mobile-nav-item active" data-view="home"><span>⌂</span><small>HOME</small></button>
-      <button class="mobile-nav-item" data-view="lab"><span>✧</span><small>MAKE</small></button>
-      <button class="mobile-nav-item" data-view="explore"><span>⚔</span><small>GO</small></button>
-      <button class="mobile-nav-item" data-view="collection"><span>▦</span><small>SLIMES</small></button>
+    <nav class="mobile-nav" aria-label="모바일 메뉴">
+      <button class="mobile-nav-item active" data-view="home"><span>⌂</span><small>정원</small></button>
+      <button class="mobile-nav-item" data-view="lab"><span>✧</span><small>연구소</small></button>
+      <button class="mobile-nav-item" data-view="explore"><span>⚔</span><small>모험</small></button>
+      <button class="mobile-nav-item" data-view="collection"><span>▦</span><small>도감</small></button>
     </nav>
     <div id="toast" class="toast" role="status"></div>
     <div id="modal-root"></div>
